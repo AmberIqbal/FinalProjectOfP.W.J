@@ -27,10 +27,10 @@ function getPrices(taxBoolean) {
     } else if (taxBoolean == false) {
       finalPrice = dishData[i].price;
     } else {
-      console.log("You  need to pass a boolean to the getPrices call!");
+      console.log("You need to pass a boolean to the getPrices call!");
       return;
     }
-    console.log("Dish:", dishData[i].name, "price:", finalPrice);
+    console.log("Dish: " + dishData[i].name, "price: $" + finalPrice + "\n");
   }
 }
 function getDiscount(taxBoolean, guests) {
@@ -42,7 +42,7 @@ function getDiscount(taxBoolean, guests) {
     } else if (guests >= 5) {
       discount = 10;
     }
-    console.log("Discount is : $" + discount);
+    console.log("Discount is: $" + discount);
   } else {
     console.log("The second argument must be a number between 0 and 30");
   }
